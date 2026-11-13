@@ -1,0 +1,29 @@
+{
+  "name": "xingguang-delivery-h5",
+  "version": "1.0.0",
+  "private": true,
+  "description": "数创星光外卖 · 用户端 H5 原型（Vue3 + Vite）",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "app:sync": "vite build && cap sync android",
+    "app:apk": "vite build && cap sync android && cd android && gradlew.bat assembleDebug",
+    "app:open": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.3",
+    "@capacitor/cli": "^6.2.3",
+    "@capacitor/core": "^6.2.3",
+    "axios": "^1.7.7",
+    "pinia": "^2.2.6",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^5.4.11",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}

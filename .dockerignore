@@ -1,0 +1,11 @@
+# Docker 构建上下文排除（web 镜像只需 4 个前端源码）
+**/node_modules
+**/dist
+**/.git
+**/.idea
+**/*.log
+backend/target
+frontend/android
+img
+docs
+.design-preview/dist

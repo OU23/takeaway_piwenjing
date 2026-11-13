@@ -1,0 +1,27 @@
+# ---- 构建产物（不进版本库，用 mvn package / npm run build 重新生成）----
+backend/target/
+**/dist/
+frontend/android/app/build/
+frontend/android/.gradle/
+frontend/android/local.properties
+frontend/android/capacitor-cordova-android-plugins/
+
+# ---- 依赖 ----
+node_modules/
+
+# ---- 日志与运行期临时文件 ----
+*.log
+.tmp-shots/
+_cookies.txt
+
+# ---- IDE / 系统文件 ----
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- 敏感配置与本地工具目录 ----
+frontend/.env
+.env
+.env.local
+.workbuddy/
+.workbuddy-ai/

@@ -1,0 +1,20 @@
+{
+  "name": "xingguang-user-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "数创星光外卖 · 用户端 H5（首页按高保真视觉稿实现，演示数据）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 8082"
+  },
+  "dependencies": {
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.11"
+  }
+}

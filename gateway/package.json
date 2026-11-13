@@ -1,0 +1,13 @@
+{
+  "name": "xingguang-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "数创星光外卖 · 统一入口网关（单端口反向代理，按路径前缀分发到各前端与后端）",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  }
+}

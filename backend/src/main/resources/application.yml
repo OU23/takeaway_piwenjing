@@ -1,0 +1,96 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: xingguang-delivery
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/xingguang_delivery?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    # H4：密码走环境变量注入；123456 仅为本地开发库默认值，生产必须用 XG_DB_PASSWORD 覆盖并开启 useSSL
+    password: ${XG_DB_PASSWORD:123456}
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 10000
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  # 图片上传：单文件 10MB（业务侧再按 oss.max-size-mb 二次校验）
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 12MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+  global-config:
+    banner: false
+    db-config:
+      id-type: assign_id
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+
+# ---- 业务开关（对应 SRS 1.5 【保留】/【替换】/【取消】三分法）----
+xingguang:
+  # ---- C 端账号会话 ----
+  auth:
+    # 令牌签名密钥：生产必须用环境变量 XG_AUTH_SECRET 注入并定期轮换
+    secret: ${XG_AUTH_SECRET:xg-dev-secret-change-me-in-production}
+    # 令牌有效期（小时），默认 7 天
+    token-ttl-hours: 168
+    # 演示身份开关（SRS 9.3 / 审查报告 S3）：允许未携带令牌回落演示账号（C 端演示用户 /
+    # 超管 / 骑手），仅限本地开发与 e2e；生产环境必须为 false（启动自检会告警）。
+    demo-identity-enabled: ${XG_DEMO_IDENTITY:true}
+  # 渠道支付回调验签密钥（S1）：生产必须用 XG_PAY_NOTIFY_SECRET 注入
+  pay:
+    notify-secret: ${XG_PAY_NOTIFY_SECRET:xg-dev-pay-notify-secret}
+  # CORS 白名单（H3）：逗号分隔；生产用 XG_CORS_ORIGINS 注入正式域名，留空则仅放行本机 dev server
+  cors:
+    allowed-origins: ${XG_CORS_ORIGINS:}
+  # 模拟支付通道总开关：生产环境必须为 false（SRS 9.3，启动自检会告警）
+  mock-pay-enabled: true
+  # 模拟短信：开发环境固定验证码
+  mock-sms-enabled: true
+  mock-sms-code: "8888"
+  # 高德地理编码（REST）：key 走环境变量注入，不再入库（H4）
+  amap:
+    key: ${XG_AMAP_KEY:}
+  # 支付宝沙箱（个人可注册开放平台沙箱，SRS 【保留】）
+  alipay:
+    enabled: false
+    app-id: ""
+    gateway: https://openapi-sandbox.dl.alipaydev.com/gateway.do
+  # ---- MinIO 对象存储 ----
+  # 控制台 http://192.168.35.120:9001/ ；程序走 S3 API :9000
+  # AK/SK 走环境变量注入，避免明文入库；未填写时上传接口返回明确提示，不影响其它功能启动。
+  oss:
+    enabled: true
+    endpoint: http://192.168.35.120:9000
+    # 桶公开读时的直链前缀（<public-base-url>/<bucket>/<objectKey>）；留空则返回临时签名 URL
+    public-base-url: http://192.168.35.120:9000
+    bucket: xingguang-oss
+    access-key: ${XG_OSS_ACCESS_KEY:}
+    secret-key: ${XG_OSS_SECRET_KEY:}
+    presign-expiry-seconds: 3600
+    max-size-mb: 5
+
+logging:
+  level:
+    root: info
+    com.xingguang.delivery: info

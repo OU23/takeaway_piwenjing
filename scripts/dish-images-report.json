@@ -1,0 +1,341 @@
+{
+  "at": "2026-10-29T07:25:35.204Z",
+  "api": "http://127.0.0.1:8090/api/v1",
+  "items": [
+    {
+      "id": "301",
+      "name": "招牌辣子鸡",
+      "shopId": "101",
+      "keyword": "辣子鸡",
+      "objectKey": "dish/202610/ef69187820c040d9b078f2a601a3aca5.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/ef69187820c040d9b078f2a601a3aca5.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=2075853671,3694036156&fm=253&fmt=auto&app=138&f=JPEG?w=588&h=500",
+      "status": "ok"
+    },
+    {
+      "id": "302",
+      "name": "麻婆豆腐",
+      "shopId": "101",
+      "keyword": "麻婆豆腐 菜品",
+      "objectKey": "dish/202610/0a6ea71f4b3b4c889c2970344970b379.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/0a6ea71f4b3b4c889c2970344970b379.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=888351201,1131482906&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1043",
+      "status": "ok"
+    },
+    {
+      "id": "303",
+      "name": "干锅花菜",
+      "shopId": "101",
+      "keyword": "干锅花菜 菜品",
+      "objectKey": "dish/202610/023c353a27ca4841951b296b0a0fd7dc.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/023c353a27ca4841951b296b0a0fd7dc.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=613211998,1694709828&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
+      "status": "ok"
+    },
+    {
+      "id": "304",
+      "name": "农家小炒肉",
+      "shopId": "101",
+      "keyword": "小炒肉 菜品",
+      "objectKey": "dish/202610/1772561cc9ea4f02884ca763b9510b88.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/1772561cc9ea4f02884ca763b9510b88.jpg",
+      "source": "百度图片｜https://img0.baidu.com/it/u=4254002938,1592868869&fm=253&fmt=auto&app=138&f=JPEG?w=664&h=500",
+      "status": "ok"
+    },
+    {
+      "id": "305",
+      "name": "秘制回锅肉",
+      "shopId": "101",
+      "keyword": "回锅肉 菜品",
+      "objectKey": "dish/202610/186aa6e53ba449d89837c0622e63c91b.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/186aa6e53ba449d89837c0622e63c91b.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=1792262022,3827512274&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=902",
+      "status": "ok"
+    },
+    {
+      "id": "306",
+      "name": "川北凉粉",
+      "shopId": "101",
+      "keyword": "川北凉粉 菜品",
+      "objectKey": "dish/202610/ff5e29ec92114248ae31a018101b8451.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/ff5e29ec92114248ae31a018101b8451.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=1204902657,311271348&fm=253&fmt=auto&app=138&f=JPEG?w=612&h=500",
+      "status": "ok"
+    },
+    {
+      "id": "307",
+      "name": "米饭",
+      "shopId": "101",
+      "keyword": "白米饭",
+      "objectKey": "dish/202610/39755acd16de44fdba01ee8c3b3781fd.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/39755acd16de44fdba01ee8c3b3781fd.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=1068985626,2838784713&fm=253&fmt=auto&app=120&f=JPEG?w=602&h=500",
+      "status": "ok"
+    },
+    {
+      "shopId": "101",
+      "name": "星光小馆·川湘菜",
+      "keyword": "星光小馆 餐饮",
+      "objectKey": "logo=shop/202610/a105553be8694758a855a52b060f82af.jpg,header=header/202610/ab708454ec944f0c82a602fa47c6f57c.jpg",
+      "status": "ok"
+    },
+    {
+      "id": "321",
+      "name": "鸡胸肉藜麦沙拉",
+      "shopId": "102",
+      "keyword": "鸡胸肉沙拉",
+      "objectKey": "dish/202610/19d91c63e28a4cce9b74308c4af65268.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/19d91c63e28a4cce9b74308c4af65268.jpg",
+      "source": "百度图片｜https://img0.baidu.com/it/u=969218308,333663177&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=656",
+      "status": "ok"
+    },
+    {
+      "id": "322",
+      "name": "牛油果虾仁沙拉",
+      "shopId": "102",
+      "keyword": "牛油果虾仁沙拉 轻食",
+      "objectKey": "dish/202610/2d99b74245f445bf81857d1ae7a2a673.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/2d99b74245f445bf81857d1ae7a2a673.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=3762729220,3328843302&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
+      "status": "ok"
+    },
+    {
+      "id": "323",
+      "name": "低脂鸡肉卷",
+      "shopId": "102",
+      "keyword": "低脂鸡肉卷 轻食",
+      "objectKey": "dish/202610/04b62c6fc9f1412b83136a6afa9f2b72.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/04b62c6fc9f1412b83136a6afa9f2b72.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=614191705,3460346594&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=640",
+      "status": "ok"
+    },
+    {
+      "id": "324",
+      "name": "全麦三明治",
+      "shopId": "102",
+      "keyword": "全麦三明治 轻食",
+      "objectKey": "dish/202610/96a70a359e2e4fbfbfdb9c7aef35f347.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/96a70a359e2e4fbfbfdb9c7aef35f347.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=3289739035,3319630137&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1044",
+      "status": "ok"
+    },
+    {
+      "id": "325",
+      "name": "鲜榨橙汁",
+      "shopId": "102",
+      "keyword": "鲜榨橙汁 轻食",
+      "objectKey": "dish/202610/36722314a3064f5db034116e1437fa6d.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/36722314a3064f5db034116e1437fa6d.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=205513672,918003592&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889",
+      "status": "ok"
+    },
+    {
+      "id": "341",
+      "name": "招牌珍珠奶茶",
+      "shopId": "103",
+      "keyword": "珍珠奶茶",
+      "objectKey": "dish/202610/15308df16751471784683dce2cb21be5.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/15308df16751471784683dce2cb21be5.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=2467173032,2902361393&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=753",
+      "status": "ok"
+    },
+    {
+      "id": "342",
+      "name": "生椰拿铁",
+      "shopId": "103",
+      "keyword": "生椰拿铁 饮品",
+      "objectKey": "dish/202610/84e47277c5a041ea86f1ea1c2d540795.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/84e47277c5a041ea86f1ea1c2d540795.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=3783700518,916312085&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=606",
+      "status": "ok"
+    },
+    {
+      "id": "345",
+      "name": "芋泥波波奶茶",
+      "shopId": "103",
+      "keyword": "芋泥波波奶茶 饮品",
+      "objectKey": "dish/202610/e15e197be1a748439273208cfeea5141.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/e15e197be1a748439273208cfeea5141.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=3331439589,931106436&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1020",
+      "status": "ok"
+    },
+    {
+      "id": "343",
+      "name": "芝士葡萄",
+      "shopId": "103",
+      "keyword": "芝士葡萄 饮品",
+      "objectKey": "dish/202610/c5fd99d5d6c94cf39f22147b413a5155.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/c5fd99d5d6c94cf39f22147b413a5155.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=3908040739,3046387585&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=737",
+      "status": "ok"
+    },
+    {
+      "id": "344",
+      "name": "满杯百香果",
+      "shopId": "103",
+      "keyword": "满杯百香果 饮品",
+      "objectKey": "dish/202610/b22e8af280a74668a1625e04498da35f.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/b22e8af280a74668a1625e04498da35f.jpg",
+      "source": "百度图片｜https://img0.baidu.com/it/u=4274892328,37308835&fm=253&fmt=auto&app=138&f=JPEG?w=514&h=500",
+      "status": "ok"
+    },
+    {
+      "id": "346",
+      "name": "葡式蛋挞",
+      "shopId": "103",
+      "keyword": "蛋挞",
+      "objectKey": "dish/202610/0679cc4a07504d47b618ae3bd614fcf0.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/0679cc4a07504d47b618ae3bd614fcf0.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=3430409323,3999412787&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667",
+      "status": "ok"
+    },
+    {
+      "id": "361",
+      "name": "招牌红烧牛肉面",
+      "shopId": "104",
+      "keyword": "红烧牛肉面",
+      "objectKey": "dish/202610/a5511df70bb54469ba9c1860b8bb9329.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/a5511df70bb54469ba9c1860b8bb9329.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=340458505,2169599696&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
+      "status": "ok"
+    },
+    {
+      "id": "362",
+      "name": "番茄牛腩面",
+      "shopId": "104",
+      "keyword": "番茄牛腩面 面食",
+      "objectKey": "dish/202610/c1fa4b1790d0493689c3ce77de269472.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/c1fa4b1790d0493689c3ce77de269472.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=2249716839,3399990671&fm=253&fmt=auto&app=120&f=JPEG?w=849&h=800",
+      "status": "ok"
+    },
+    {
+      "id": "363",
+      "name": "清汤牛肉面",
+      "shopId": "104",
+      "keyword": "清汤牛肉面 面食",
+      "objectKey": "dish/202610/f4b5496a968f4615bd26bddf2607e9cd.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/f4b5496a968f4615bd26bddf2607e9cd.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=504100004,3624250805&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
+      "status": "ok"
+    },
+    {
+      "id": "364",
+      "name": "凉拌海带丝",
+      "shopId": "104",
+      "keyword": "凉拌海带丝",
+      "objectKey": "dish/202610/6478d1ef5bda4ec68ea87e8973f0e70e.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/6478d1ef5bda4ec68ea87e8973f0e70e.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=1667057592,4023297551&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1044",
+      "status": "ok"
+    },
+    {
+      "id": "365",
+      "name": "卤蛋",
+      "shopId": "104",
+      "keyword": "卤鸡蛋",
+      "objectKey": "dish/202610/81cabf0b8c4a49b188e6d6d1780a4611.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/81cabf0b8c4a49b188e6d6d1780a4611.jpg",
+      "source": "百度图片｜https://img0.baidu.com/it/u=3894728908,873766191&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=656",
+      "status": "ok"
+    },
+    {
+      "id": "381",
+      "name": "满杯莓莓",
+      "shopId": "106",
+      "keyword": "满杯莓莓 饮品",
+      "objectKey": "dish/202610/926bdef31e364632aa436966f918b87a.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/926bdef31e364632aa436966f918b87a.jpg",
+      "source": "百度图片｜https://img0.baidu.com/it/u=1250357522,1053135590&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=707",
+      "status": "ok"
+    },
+    {
+      "id": "382",
+      "name": "经典珍珠奶茶",
+      "shopId": "106",
+      "keyword": "珍珠奶茶",
+      "objectKey": "dish/202610/15308df16751471784683dce2cb21be5.jpg",
+      "status": "ok(reused)"
+    },
+    {
+      "id": "383",
+      "name": "莓莓柠檬茶",
+      "shopId": "106",
+      "keyword": "莓莓柠檬茶 饮品",
+      "objectKey": "dish/202610/0e4cce702fb5429eb7a282151f056e49.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/0e4cce702fb5429eb7a282151f056e49.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=449215018,769714698&fm=253&fmt=auto&app=138&f=JPEG?w=514&h=500",
+      "status": "ok"
+    },
+    {
+      "id": "384",
+      "name": "百香果双响炮",
+      "shopId": "106",
+      "keyword": "百香果双响炮 饮品",
+      "objectKey": "dish/202610/a3b0b1aa4e534ef081687ce9a883caf3.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/a3b0b1aa4e534ef081687ce9a883caf3.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=61139772,1037572352&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889",
+      "status": "ok"
+    },
+    {
+      "id": "386",
+      "name": "满杯红柚",
+      "shopId": "106",
+      "keyword": "满杯红柚 饮品",
+      "objectKey": "dish/202610/2a9f494d500b4c8f949aee07ebfe1672.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/2a9f494d500b4c8f949aee07ebfe1672.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=1010914221,2460301672&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=820",
+      "status": "ok"
+    },
+    {
+      "id": "385",
+      "name": "生椰拿铁咖啡",
+      "shopId": "106",
+      "keyword": "生椰拿铁咖啡 饮品",
+      "objectKey": "dish/202610/ec8c5ab4ce5e4b0393ae22d280dcc449.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/ec8c5ab4ce5e4b0393ae22d280dcc449.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=1067597080,1716132679&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=750",
+      "status": "ok"
+    },
+    {
+      "id": "391",
+      "name": "冰鲜柠檬水",
+      "shopId": "107",
+      "keyword": "冰鲜柠檬水 饮品",
+      "objectKey": "dish/202610/ee0777ea063641a0a8a02af27156420d.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/ee0777ea063641a0a8a02af27156420d.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=1532913070,3947004980&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+      "status": "ok"
+    },
+    {
+      "id": "393",
+      "name": "摇摇奶昔",
+      "shopId": "107",
+      "keyword": "奶昔 饮品",
+      "objectKey": "dish/202610/1f1035a49eb748b7a161f09471711bdf.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/1f1035a49eb748b7a161f09471711bdf.jpg",
+      "source": "百度图片｜https://img1.baidu.com/it/u=1689607359,4234395611&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
+      "status": "ok"
+    },
+    {
+      "id": "392",
+      "name": "珍珠奶茶",
+      "shopId": "107",
+      "keyword": "珍珠奶茶 饮品",
+      "objectKey": "dish/202610/79ba9ece1ec34f8dad7a5df98035398e.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/79ba9ece1ec34f8dad7a5df98035398e.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=3498228534,3109877825&fm=253&fmt=auto&app=138&f=JPEG?w=572&h=500",
+      "status": "ok"
+    },
+    {
+      "id": "394",
+      "name": "摩天脆脆冰淇淋",
+      "shopId": "107",
+      "keyword": "冰淇淋蛋筒",
+      "objectKey": "dish/202610/e901ef3c27704b42896e4c18edb12a50.jpg",
+      "url": "http://192.168.35.120:9000/xingguang-oss/dish/202610/e901ef3c27704b42896e4c18edb12a50.jpg",
+      "source": "百度图片｜https://img2.baidu.com/it/u=1496210448,56159035&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1044",
+      "status": "ok"
+    }
+  ]
+}

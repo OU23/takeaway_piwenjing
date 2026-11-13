@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#FF7A1A" />
+    <!-- 内联 SVG favicon：省一次请求，也消掉 /favicon.ico 的 404 控制台报错 -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F5481F'/%3E%3Ctext x='16' y='23' font-size='19' text-anchor='middle' fill='%23fff' font-family='system-ui,sans-serif'%3E%E6%98%9F%3C/text%3E%3C/svg%3E"
+    />
+    <meta name="description" content="数创星光外卖 · 本地生活外卖点餐平台" />
+    <!-- 数字串（订单号、手机号）不要被系统识别成电话号码，避免点击时弹出拨号 -->
+    <meta name="format-detection" content="telephone=no, email=no, address=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>数创星光外卖</title>
+    <!--
+      首屏骨架：内联在 HTML 里，JS 下载解析期间就有内容可看，
+      避免「白屏 → 突然出现整页」的观感（SRS 9.1 首屏 ≤ 1.5s）。
+      Vue 挂载时会替换 #app 的内容，骨架随之移除。
+    -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #f4f5f7;
+        -webkit-text-size-adjust: 100%;
+      }
+      .boot {
+        max-width: 480px;
+        min-height: 100vh;
+        margin: 0 auto;
+        background: #f4f5f7;
+      }
+      .boot__head {
+        padding: calc(12px + env(safe-area-inset-top, 0px)) 12px 16px;
+        background: linear-gradient(135deg, #ffb03a 0%, #ff7a1a 50%, #f5481f 100%);
+      }
+      .boot__bar {
+        height: 34px;
+        margin-top: 6px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.3);
+      }
+      .boot__body {
+        padding: 12px;
+      }
+      .boot__block {
+        height: 96px;
+        border-radius: 10px;
+        background: #eff0f3;
+      }
+      .boot__block + .boot__block {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="boot">
+        <div class="boot__head"><div class="boot__bar"></div></div>
+        <div class="boot__body">
+          <div class="boot__block"></div>
+          <div class="boot__block"></div>
+          <div class="boot__block"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+# syntax=docker/dockerfile:1
+# web 镜像：在容器内构建 4 个前端，由 nginx 统一托管并反代 /api（替代 Node 网关）
+# 路由与本地网关一致：/ 消费者H5  /admin 运营后台  /merchant 商家端  /user 用户端H5  /api 后端
+
+# ===== 消费者 H5（frontend，base=/） =====
+FROM node:20-alpine AS build-consumer
+WORKDIR /app
+COPY frontend/package.json frontend/package-lock.json ./
+RUN npm ci --registry=https://registry.npmmirror.com
+COPY frontend/ .
+RUN npm run build
+
+# ===== 运营后台（admin-web，base=/admin） =====
+FROM node:20-alpine AS build-admin
+WORKDIR /app
+COPY admin-web/package.json admin-web/package-lock.json ./
+RUN npm ci --registry=https://registry.npmmirror.com
+COPY admin-web/ .
+RUN npm run build
+
+# ===== 商家端 H5（merchant-web，base=/merchant） =====
+FROM node:20-alpine AS build-merchant
+WORKDIR /app
+COPY merchant-web/package.json merchant-web/package-lock.json ./
+RUN npm ci --registry=https://registry.npmmirror.com
+COPY merchant-web/ .
+RUN npm run build
+
+# ===== 用户端 H5（design-preview，base=/user） =====
+FROM node:20-alpine AS build-user
+WORKDIR /app
+COPY design-preview/package.json design-preview/package-lock.json ./
+RUN npm ci --registry=https://registry.npmmirror.com
+COPY design-preview/ .
+RUN npm run build
+
+# ===== 最终镜像：nginx 托管 =====
+FROM nginx:1.27-alpine
+COPY deploy/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build-consumer /app/dist /usr/share/nginx/html/consumer
+COPY --from=build-admin    /app/dist /usr/share/nginx/html/admin
+COPY --from=build-merchant /app/dist /usr/share/nginx/html/merchant
+COPY --from=build-user     /app/dist /usr/share/nginx/html/user
+EXPOSE 80

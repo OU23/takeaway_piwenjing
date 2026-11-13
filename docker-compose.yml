@@ -1,0 +1,59 @@
+name: xingguang-delivery
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: xg-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${XG_DB_PASSWORD:-123456}
+      MYSQL_DATABASE: xingguang_delivery
+      TZ: Asia/Shanghai
+    # 数据持久化：容器重建后数据不丢
+    volumes:
+      - mysql-data:/var/lib/mysql
+      # 首次启动时按序自动建库建表并导入数据
+      - ./backend/src/main/resources/db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./backend/src/main/resources/db/migration-auth.sql:/docker-entrypoint-initdb.d/02-migration-auth.sql:ro
+      - ./backend/src/main/resources/db/migration-refund.sql:/docker-entrypoint-initdb.d/03-migration-refund.sql:ro
+      - ./backend/src/main/resources/db/data.sql:/docker-entrypoint-initdb.d/04-data.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p$$MYSQL_ROOT_PASSWORD"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+    # 如需从宿主机直连 MySQL，取消下面注释（注意与本地 3306 冲突）
+    # ports:
+    #   - "3307:3306"
+
+  backend:
+    build: ./backend
+    container_name: xg-backend
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Shanghai
+      # 覆盖 application.yml 中的 127.0.0.1，指向 compose 网络内的 mysql 服务
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/xingguang_delivery?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+      XG_DB_PASSWORD: ${XG_DB_PASSWORD:-123456}
+      # CORS 白名单：加入 nginx 入口源（localhost:9000）
+      XG_CORS_ORIGINS: http://localhost:9000,http://127.0.0.1:9000
+    ports:
+      - "8090:8090"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    container_name: xg-web
+    depends_on:
+      - backend
+    ports:
+      # 与本地 Node 网关同端口，直接替代它
+      - "9000:80"
+    restart: unless-stopped
+
+volumes:
+  mysql-data:

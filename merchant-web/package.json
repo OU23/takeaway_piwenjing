@@ -1,0 +1,21 @@
+{
+  "name": "xingguang-merchant-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "数创星光外卖 · 商家端 H5（独立账号登录、门店/菜品/接单/数据看板）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 8086"
+  },
+  "dependencies": {
+    "vant": "^4.9.0",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.11"
+  }
+}

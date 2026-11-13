@@ -1,0 +1,23 @@
+{
+  "name": "xingguang-admin-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "数创星光外卖 · 平台运营后台（桌面大屏，前后端分离）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 8081"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "echarts": "^5.5.0",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.11",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}
